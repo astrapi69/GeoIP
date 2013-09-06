@@ -13,7 +13,7 @@ class CityLookupTest {
     	
 	try {
 		
-		URL location = CityLookupTest.class.getClassLoader().getResource("GeoIPCity.dat");
+		URL location = CityLookupTest.class.getClassLoader().getResource("GeoLiteCity.dat");
 	    LookupService cl = new LookupService(location.getFile(), LookupService.GEOIP_MEMORY_CACHE );
             Location l1 = cl.getLocation("213.52.50.8");
             Location l2 = cl.getLocation(args[0]);

@@ -8,6 +8,10 @@
 	<packaging>jar</packaging>
 
 	<name>GeoIp For Java</name>
+	
+	<properties>	
+		<github.global.server>github</github.global.server>
+	</properties>
 
 	<dependencies>
 		<!-- test dependencies -->
