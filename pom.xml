@@ -8,8 +8,8 @@
 	<packaging>jar</packaging>
 
 	<name>GeoIp For Java</name>
-	
-	<properties>	
+
+	<properties>
 		<github.global.server>github</github.global.server>
 	</properties>
 
@@ -90,7 +90,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<distributionManagement>
 
 		<repository>
@@ -100,8 +100,8 @@
 		</repository>
 
 	</distributionManagement>
-	
-	
+
+
 	<profiles>
 
 		<profile>
@@ -131,9 +131,17 @@
 					</plugin>
 
 					<plugin>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<version>2.8.1</version>
+						<configuration>
+							<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+						</configuration>
+					</plugin>
+
+					<plugin>
 						<groupId>com.github.github</groupId>
 						<artifactId>site-maven-plugin</artifactId>
-						<version>0.7</version>
+						<version>0.9</version>
 						<configuration>
 							<message>Maven artifacts for ${project.version}</message>
 							<!-- git commit message -->
@@ -258,7 +266,7 @@
 
 
 	<scm>
-		<developerConnection>git@github.com:snambi/GeoIP.git</developerConnection>
-		<url>https://github.com/snambi/GeoIP</url>
+		<developerConnection>git@github.com:astrapi69/GeoIP.git</developerConnection>
+		<url>https://github.com/astrapi69/GeoIP</url>
 	</scm>
 </project>
