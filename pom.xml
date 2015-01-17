@@ -43,6 +43,11 @@
 		</license>
 	</licenses>
 
+	<scm>
+		<developerConnection>git@github.com:astrapi69/GeoIP.git</developerConnection>
+		<url>https://github.com/astrapi69/GeoIP</url>
+	</scm>
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -90,17 +95,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-
-		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-repo</url>
-		</repository>
-
-	</distributionManagement>
-
 
 	<profiles>
 
@@ -263,10 +257,5 @@
 		</profile>
 
 	</profiles>
-
-
-	<scm>
-		<developerConnection>git@github.com:astrapi69/GeoIP.git</developerConnection>
-		<url>https://github.com/astrapi69/GeoIP</url>
-	</scm>
+	
 </project>
